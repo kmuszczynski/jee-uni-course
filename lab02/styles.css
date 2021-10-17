@@ -1,0 +1,29 @@
+.content{
+    width: 100%;
+    max-width: 1000px;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+header {
+    padding: 10px;
+    background-color: darkgoldenrod;
+}
+
+footer {
+    background-color: darkgoldenrod;
+    padding: 5px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.item {
+    display: block;
+    border: 3px solid rgb(99, 64, 0);
+    width: 60%;
+    margin-left: 20%;
+}
+
+.item img {
+    max-width: 100%;
+}
