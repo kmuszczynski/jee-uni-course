@@ -1,20 +1,25 @@
 package zad03;
 
 public class AgeOnPlanets {
+    public static double ageOnPlanet(Planet planet, int number) {
+        double secondsInYearOnEarth = 31557600;
+        return number/secondsInYearOnEarth/ planet.getOrbitRatio();
+    }
+
     public static void main(String[] args) {
-        System.out.println("Testing for 1 000 000 and 10 000 000 seconds");
         int numberOne = 1000000000;
         int numberTwo = 100000000;
-        double secondsInYearOnEarth = 31557600;
+        System.out.printf("Testing for %d and %d seconds/n", numberOne, numberTwo);
 
-        System.out.println("1 000 000 000 seconds:");
+
+        System.out.printf("%d seconds:/n", numberOne);
         for (Planet p : Planet.values()) {
-            System.out.printf("Your age on %s is %.2f Earth years%n", p, numberOne/secondsInYearOnEarth/p.getOrbitRatio());
+            System.out.printf("Your age on %s is %.2f Earth years%n", p, ageOnPlanet(p, numberOne));
         }
 
-        System.out.println("100 000 000 seconds:");
+        System.out.printf("%d seconds:/n", numberTwo);
         for (Planet p : Planet.values()) {
-            System.out.printf("Your age on %s is %.2f Earth years%n", p, numberTwo/secondsInYearOnEarth/p.getOrbitRatio());
+            System.out.printf("Your age on %s is %.2f Earth years%n", p, ageOnPlanet(p, numberTwo));
         }
     }
 }
