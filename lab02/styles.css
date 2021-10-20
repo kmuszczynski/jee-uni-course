@@ -2,12 +2,13 @@
     width: 100%;
     max-width: 1000px;
     background-color: lightgoldenrodyellow;
-    text-align: center;
+    /* text-align: center; */
 }
 
 header {
     padding: 10px;
     background-color: darkgoldenrod;
+    text-align: center;
 }
 
 footer {
@@ -22,8 +23,23 @@ footer {
     border: 3px solid rgb(99, 64, 0);
     width: 60%;
     margin-left: 20%;
+    margin-bottom: 15px;
 }
 
 .item img {
     max-width: 100%;
+}
+
+.item a{
+    margin-left: auto;
+}
+
+.item p{
+    display: inline;
+}
+
+.text-wrapper {
+    padding: 5px;
+    display: flex;
+    align-items: center;
 }
