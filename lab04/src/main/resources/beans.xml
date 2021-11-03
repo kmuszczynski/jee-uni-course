@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="jillian" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Jillian" />
+    <property name="lastName" value="Palethorpe" />
+    <property name="email" value="jpalethorpe0@accuweather.com" />
+    <property name="companyName" value="Layo" />
+    </bean>
+    
+<bean id="mohandas" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Mohandas" />
+    <property name="lastName" value="Branchet" />
+    <property name="email" value="mbranchet1@marriott.com" />
+    <property name="companyName" value="Gigabox" />
+    </bean>
+    
+<bean id="philly" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Philly" />
+    <property name="lastName" value="Guyton" />
+    <property name="email" value="pguyton2@shareasale.com" />
+    <property name="companyName" value="Quatz" />
+    </bean>
+    
+<bean id="kirsteni" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Kirsteni" />
+    <property name="lastName" value="Bentham3" />
+    <property name="email" value="kbentham3@loc.gov" />
+    <property name="companyName" value="Quaxo" />
+    </bean>
+    
+<bean id="cosetta" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Cosetta" />
+    <property name="lastName" value="Rolfi" />
+    <property name="email" value="crolfi4@photobucket.com" />
+    <property name="companyName" value="Riffwire" />
+    </bean>
+    
+<bean id="hedvig" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Hedvig" />
+    <property name="lastName" value="Firminger" />
+    <property name="email" value="hfirminger5@netscape.com" />
+    <property name="companyName" value="Quire" />
+    </bean>
+    
+<bean id="lorna" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Lorna" />
+    <property name="lastName" value="Caseley" />
+    <property name="email" value="lcaseley6@illinois.edu" />
+    <property name="companyName" value="Skinix" />
+    </bean>
+    
+<bean id="arty" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Arty" />
+    <property name="lastName" value="Nesey" />
+    <property name="email" value="anesey7@washington.edu" />
+    <property name="companyName" value="Dabvine" />
+    </bean>
+    
+<bean id="dugald" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Dugald" />
+    <property name="lastName" value="Fechnie" />
+    <property name="email" value="dfechnie8@feedburner.com" />
+    <property name="companyName" value="Twitterbridge" />
+    </bean>
+    
+<bean id="halley" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Halley" />
+    <property name="lastName" value="Gadaud" />
+    <property name="email" value="hgadaud9@sohu.com" />
+    <property name="companyName" value="Oyope" />
+    </bean>
+    
+<bean id="kamilah" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Kamilah" />
+    <property name="lastName" value="Wolters" />
+    <property name="email" value="kwoltersa@google.es" />
+    <property name="companyName" value="Shuffledrive" />
+    </bean>
+    
+<bean id="meredeth" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Meredeth" />
+    <property name="lastName" value="Bedward" />
+    <property name="email" value="mbedwardb@uiuc.edu" />
+    <property name="companyName" value="Meeveo" />
+    </bean>
+    
+<bean id="aloin" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Aloin" />
+    <property name="lastName" value="Rigglesford" />
+    <property name="email" value="arigglesfordc@cafepress.com" />
+    <property name="companyName" value="Skyble" />
+    </bean>
+    
+<bean id="petunia" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Petunia" />
+    <property name="lastName" value="Chevolleau" />
+    <property name="email" value="pchevolleaud@cnn.com" />
+    <property name="companyName" value="Zoombeat" />
+    </bean>
+    
+<bean id="sunshine" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Sunshine" />
+    <property name="lastName" value="Haggerty" />
+    <property name="email" value="shaggertye@webnode.com" />
+    <property name="companyName" value="Digitube" />
+    </bean>
+    
+<bean id="eberto" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Eberto" />
+    <property name="lastName" value="Keaves" />
+    <property name="email" value="ekeavesf@tumblr.com" />
+    <property name="companyName" value="Voonte" />
+    </bean>
+    
+<bean id="tasha" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Tasha" />
+    <property name="lastName" value="Shemwell" />
+    <property name="email" value="tshemwellg@prlog.org" />
+    <property name="companyName" value="Brainbox" />
+    </bean>
+    
+<bean id="philomena" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Philomena" />
+    <property name="lastName" value="Diloway" />
+    <property name="email" value="pdilowayh@opensource.org" />
+    <property name="companyName" value="Zoozzy" />
+    </bean>
+    
+<bean id="raymond" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Raymond" />
+    <property name="lastName" value="Behnecke" />
+    <property name="email" value="rbehneckei@zdnet.com" />
+    <property name="companyName" value="Realmix" />
+    </bean>
+    
+<bean id="kirbie" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Kirbie" />
+    <property name="lastName" value="Wrettum" />
+    <property name="email" value="kwrettumj@slideshare.net" />
+    <property name="companyName" value="Browsetype" />
+    </bean>
+    
+<bean id="edie" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Edie" />
+    <property name="lastName" value="Pledger" />
+    <property name="email" value="epledgerk@chron.com" />
+    <property name="companyName" value="Voonder" />
+    </bean>
+    
+<bean id="brooke" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Brooke" />
+    <property name="lastName" value="Ratcliff" />
+    <property name="email" value="bratcliffl@dailymotion.com" />
+    <property name="companyName" value="Livetube" />
+    </bean>
+    
+<bean id="kristy" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Kristy" />
+    <property name="lastName" value="Burnsyde" />
+    <property name="email" value="kburnsydem@dailymotion.com" />
+    <property name="companyName" value="Oyoloo" />
+    </bean>
+    
+<bean id="vinnie" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Vinnie" />
+    <property name="lastName" value="Arp" />
+    <property name="email" value="varpn@github.io" />
+    <property name="companyName" value="Talane" />
+    </bean>
+    
+<bean id="diana" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Diana" />
+    <property name="lastName" value="Wickrath" />
+    <property name="email" value="dwickratho@liveinternet.ru" />
+    <property name="companyName" value="Ooba" />
+    </bean>
+    
+<bean id="gasper" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Gasper" />
+    <property name="lastName" value="Gane" />
+    <property name="email" value="gganep@usnews.com" />
+    <property name="companyName" value="Jabbersphere" />
+    </bean>
+    
+<bean id="jere" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Jere" />
+    <property name="lastName" value="Maberley" />
+    <property name="email" value="jmaberleyq@photobucket.com" />
+    <property name="companyName" value="Digitube" />
+    </bean>
+    
+<bean id="chrystal" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Chrystal" />
+    <property name="lastName" value="Havoc" />
+    <property name="email" value="chavocr@yahoo.com" />
+    <property name="companyName" value="Mymm" />
+    </bean>
+    
+<bean id="haze" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Haze" />
+    <property name="lastName" value="Manske" />
+    <property name="email" value="hmanskes@trellian.com" />
+    <property name="companyName" value="Katz" />
+    </bean>
+    
+<bean id="juline" class="ug.kap.tje.lab04.domain.Person">
+    <property name="firstName" value="Juline" />
+    <property name="lastName" value="Merchant" />
+    <property name="email" value="jmerchantt@123-reg.co.uk" />
+    <property name="companyName" value="Browsetype" />
+    </bean>
+    
+</beans>
