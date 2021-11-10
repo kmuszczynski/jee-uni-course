@@ -1,6 +1,7 @@
 package ug.kap.tje.lab04.domain;
 
 public class Person {
+    private String id;
     private String firstName;
     private String lastName;
     private String email;
@@ -9,11 +10,27 @@ public class Person {
     public Person() {
     }
 
+    public Person(String id, String firstName, String lastName, String email, String companyName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.companyName = companyName;
+    }
+
     public Person(String firstName, String lastName, String email, String companyName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.companyName = companyName;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getFirstName() {

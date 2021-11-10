@@ -7,6 +7,7 @@ import ug.kap.tje.lab04.domain.Person;
 
 @Component
 public class PersonManagerService {
+
     private final Person prezes;
     private final Person wiceprezes;
     private final Person sekretarka;
