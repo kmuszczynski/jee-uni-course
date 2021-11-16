@@ -3,10 +3,7 @@ package ug.kap.tje.lab04.service;
 import org.springframework.stereotype.Service;
 import ug.kap.tje.lab04.domain.Person;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 public class PersonManagerInMemoryImpl implements PersonManager{
@@ -21,33 +18,48 @@ public class PersonManagerInMemoryImpl implements PersonManager{
 
     @Override
     public Person getPerson(String id) {
-        Iterator<Person> iterator = db.iterator();
         Person personToFetch = null;
-        while(iterator.hasNext()) {
-            Person person = iterator.next();
-            if (person.getId() == id) {
-                personToFetch = person;
+
+        for (int i = 0; i < db.size(); i++) {
+            if (Objects.equals(db.get(i).getId(), id)) {
+                personToFetch = db.get(i);
             }
         }
+
         return personToFetch;
     }
 
     @Override
     public Person updatePerson(String id, Person person) {
         Person personToUpdate = new Person(id, person.getFirstName(), person.getLastName(), person.getEmail(), person.getCompanyName());
+        int indexToUpdate = -1;
         for (int i = 0; i < db.size(); i++) {
-            if (db.get(i).getId() == id ) {
-                db.remove(i);
-                db.add(personToUpdate);
+            if (Objects.equals(db.get(i).getId(), id)) {
+                indexToUpdate = i;
             }
+        }
+        if (indexToUpdate != -1) {
+            db.remove(indexToUpdate);
+            db.add(personToUpdate);
         }
         return personToUpdate;
     }
 
     @Override
-    public Person removePerson(Person person) {
-        db.remove(person);
-        return person;
+    public boolean removePerson(String id) {
+        int indexToRemove = -1;
+        for (int i = 0; i < db.size(); i++) {
+            if (Objects.equals(db.get(i).getId(), id)) {
+                indexToRemove = i;
+            }
+        }
+        if (indexToRemove != -1) {
+            db.remove(indexToRemove);
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
     @Override

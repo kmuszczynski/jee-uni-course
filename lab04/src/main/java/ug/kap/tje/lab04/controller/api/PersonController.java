@@ -1,10 +1,7 @@
 package ug.kap.tje.lab04.controller.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import ug.kap.tje.lab04.domain.Person;
 import ug.kap.tje.lab04.service.PersonManager;
 
@@ -23,12 +20,12 @@ public class PersonController {
     @GetMapping("/api/person")
     List<Person> getAll() { return personManager.getAllPersons(); }
 
-    @PostMapping("/api/person/id")
-    Person getPerson(@RequestBody String id) { return personManager.getPerson(id); }
+    @GetMapping("/api/person/{id}")
+    Person getPerson(@PathVariable String id) { return personManager.getPerson(id); }
 
-    @PostMapping("/api/person/update")
-    Person updatePerson(@RequestBody String id, @RequestBody Person person) { return personManager.updatePerson(id, person); }
+    @PutMapping("/api/person/{id}")
+    Person updatePerson(@PathVariable String id, @RequestBody Person person) { return personManager.updatePerson(id, person); }
 
-    @PostMapping("/api/person/remove")
-    Person removePerson(@RequestBody Person person) { return personManager.removePerson(person); }
+    @DeleteMapping("/api/person/{id}")
+    boolean removePerson(@PathVariable String id) { return personManager.removePerson(id); }
 }

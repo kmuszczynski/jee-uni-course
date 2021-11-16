@@ -9,6 +9,6 @@ public interface PersonManager {
     Person addPerson(Person person);
     Person getPerson(String id);
     Person updatePerson(String id, Person person);
-    Person removePerson(Person person);
+    boolean removePerson(String id);
     List<Person> getAllPersons();
 }
