@@ -3,9 +3,7 @@ package pl.edu.ug.kap.bakedGoodsCRUD.service;
 import org.springframework.stereotype.Service;
 import pl.edu.ug.kap.bakedGoodsCRUD.domain.Bread;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 public class BreadManagerInMemoryImpl implements BreadManager{
@@ -13,8 +11,9 @@ public class BreadManagerInMemoryImpl implements BreadManager{
 
     @Override
     public Bread addBread(Bread bread) {
-        Bread breadToAdd = new Bread(bread.getShape(), bread.getType());
-        db.put(UUID.randomUUID().toString(), breadToAdd);
+        String id = UUID.randomUUID().toString();
+        Bread breadToAdd = new Bread(id, bread.getShape(), bread.getType());
+        db.put(id, breadToAdd);
         return breadToAdd;
     }
 
@@ -25,7 +24,7 @@ public class BreadManagerInMemoryImpl implements BreadManager{
 
     @Override
     public Bread updateBread(String id, Bread bread) {
-        Bread breadToUpdate = new Bread(bread.getShape(), bread.getType());
+        Bread breadToUpdate = new Bread(id, bread.getShape(), bread.getType());
         db.replace(id, breadToUpdate);
         return breadToUpdate;
     }
@@ -35,13 +34,13 @@ public class BreadManagerInMemoryImpl implements BreadManager{
         if(db.containsKey(id)) {
             db.remove(id);
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     @Override
-    public Map<String, Bread> getAllBread() {
-        return db;
+    public List<Bread> getAllBread() {
+        List<Bread> allBread = new ArrayList<>(db.values());
+        return allBread;
     }
 }

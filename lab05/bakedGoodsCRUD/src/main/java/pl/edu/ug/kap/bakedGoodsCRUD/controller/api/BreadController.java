@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import pl.edu.ug.kap.bakedGoodsCRUD.domain.Bread;
 import pl.edu.ug.kap.bakedGoodsCRUD.service.BreadManager;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -17,7 +18,7 @@ public class BreadController {
     Bread addBread(@RequestBody Bread bread) { return breadManager.addBread(bread); }
 
     @GetMapping("/api/bread")
-    Map<String, Bread> getAllBread() { return breadManager.getAllBread(); }
+    List<Bread> getAllBread() { return breadManager.getAllBread(); }
 
     @GetMapping("/api/bread/{id}")
     Bread findBread(@PathVariable String id) { return breadManager.findBread(id); }
