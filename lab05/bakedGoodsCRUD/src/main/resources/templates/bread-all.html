@@ -7,12 +7,14 @@
 <body>
 
 <h2>All bread from (in memory) DB</h2>
+<a th:href="@{/bread/add}">Add new</a>
 
 <div th:each="bread : ${allBreadFromDB}">
     <div th:text="${bread.id}"></div>
     <div th:text="${bread.shape}"></div>
     <div th:text="${bread.type}"></div>
     <div><a th:href="@{/bread/delete/{id}(id=${bread.id})}">Delete</a></div>
+    <div><a th:href="@{/bread/update/{id}(id=${bread.id})}">Edit</a></div>
 </div>
 
 </body>

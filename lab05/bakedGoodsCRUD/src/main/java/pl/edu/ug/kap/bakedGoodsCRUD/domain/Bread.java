@@ -1,8 +1,18 @@
 package pl.edu.ug.kap.bakedGoodsCRUD.domain;
 
+import pl.edu.ug.kap.bakedGoodsCRUD.customValidation.BreadShapeConstraint;
+
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Bread {
     private String id;
+
+    @NotEmpty
+    @BreadShapeConstraint
     private String shape;
+
     private String type;
 
     public Bread() {
