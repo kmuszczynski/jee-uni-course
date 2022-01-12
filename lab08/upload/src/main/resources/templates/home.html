@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <div th:if="${message}">
+        <h2 th:text="${message}"/>
+    </div>
+
+    <a th:href="@{/example}">Example</a>
+    <br>
+    <a th:href="@{/sum}">Sum</a>
+    <br>
+    <a th:href="@{/image}">Image</a>
+</body>
+</html>
