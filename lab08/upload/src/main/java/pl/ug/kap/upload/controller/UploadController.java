@@ -35,13 +35,8 @@ public class UploadController {
     @PostMapping("/sum")
     public String sumUpload(@RequestParam("file") MultipartFile file,
                                    RedirectAttributes redirectAttributes) {
-        if (file.getOriginalFilename().matches(".+\\.txt")) {
-            redirectAttributes.addFlashAttribute("message",
-                    "sum: " + storageService.sum(file));
-        } else {
-            redirectAttributes.addFlashAttribute("message",
-                    "file must be in .txt format");
-        }
+        redirectAttributes.addFlashAttribute("message",
+                "sum: " + storageService.sum(file));
 
         return "redirect:/";
     }
